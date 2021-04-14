@@ -3,6 +3,34 @@
 <head>
 <title>HTMwiki</title>
 <style>
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 0px 6px 2px 32px;
+  text-decoration: underlined;
+  font-size: 16px;
+  display: block;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
 p {
   font: 15px Verdana,Arial,Helvetica,sans-serif;
 }
@@ -28,6 +56,15 @@ p.b {
 }
 </style>
 <navigation><p>Main page&nbsp;<span style="color: #ff0000;">Discussion</span></p></navigation>
+
+<div class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="main">
 <h2>Welcome to HTMwiki!</h2>
 <p>A free wiki farm. You can get started by <a href="https://github.com/TheSmallyDog/htmwiki/issues" target="_blank" rel="noopener">requesting a wiki</a> on the Github repository.</p>
 <table style="background-color: #fff387;">
@@ -59,5 +96,6 @@ p.b {
 </tr>
 </tbody>
 </table>
+</div>
 </body>
 </html>
