@@ -1,2 +1,2 @@
 # HTMwiki
-A simple wiki farm that allows wiki creations using HTML files. Request your wiki at the Pull requests tab in this repository.
+A simple wiki farm that allows wiki creations using HTML files. Request your wiki at the Issues tab in this repository.
